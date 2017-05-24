@@ -24,6 +24,12 @@ Here is an image:
 
 ![Example image](http://www.sng.sk/media/a501/image/file/13/0023/EHtM.svk_sng_k_18670.jpg)
 
+Markdown is used in the admin text editing for any of the text content on the site, including:
+
+* blog
+* pages
+* main pages (like Style Guide)
+
 # Learn more about markdown
 
 You can learn more about all the markdown features in Grav in [this tutorial](https://learn.getgrav.org/content/markdown)
