@@ -1,0 +1,11 @@
+email: branomatis@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Brano Matis'
+title: null
+state: enabled
+hashed_password: $2y$10$9.bV.rhIe2Pc07zUyDHugO67rhefvnmR1KUWWWyOmVqG./Oj5PK8C
