@@ -4,7 +4,7 @@ title: 'Hello world'
 
 Hello world!
 
-This text is using markdown. It mean you can write a h1 heading like this:
+This text is using markdown to define how it should be styled. It means you can write a h1 heading like this:
 
 # I'm the main title
 
