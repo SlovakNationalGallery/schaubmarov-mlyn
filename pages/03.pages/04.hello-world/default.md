@@ -22,7 +22,7 @@ You can create links like this one to the [SNG website](http://www.sng.sk/sk).
 
 Here is an image:
 
-![Example image](http://www.sng.sk/sk/vystavy/1049_adamciak-zacni-retrospektivna-vystava-intermedialnej-tvorby-milana-adamciaka-1964-2017)
+![Example image](http://www.sng.sk/media/a501/image/file/13/0023/EHtM.svk_sng_k_18670.jpg)
 
 # Learn more about markdown
 
