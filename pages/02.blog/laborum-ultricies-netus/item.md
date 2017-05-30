@@ -1,12 +1,16 @@
 ---
-title: Laborum ultricies netus
-date: 17:34 07/04/2014
-author: Rescue Themes
-body_classes: single single-post postid-15 single-format-standard group-blog
+title: 'Názov nejakého blog postu'
+date: '17:34 07/04/2014'
 taxonomy:
-    category: Featured
-    tag: [fifth, sixth]
-    featured: true
+    category:
+        - Featured
+    tag:
+        - fifth
+        - sixth
+    featured:
+        - '1'
+body_classes: 'single single-post postid-15 single-format-standard group-blog'
+author: 'Rescue Themes'
 ---
 
 Egestas faucibus consectetuer odit incidunt sociosqu diam inventore malesuada ridiculus taciti cursus? Architecto, ipsum nibh id auctor placerat. Tempore doloremque tenetur quibusdam esse.
