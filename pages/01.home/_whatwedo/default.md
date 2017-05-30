@@ -1,13 +1,14 @@
 ---
 vimeo:
-  src: https://player.vimeo.com/video/109354891
-  width: 570
-  height: 321
+    src: 'https://player.vimeo.com/video/109354891'
+    width: 570
+    height: 321
 class: home-content
 buttons:
-    - text: Get In Touch
-      url: http://www.getgrav.org
-      class: button radius
+    -
+        text: 'šup poď ďalej'
+        url: 'http://www.getgrav.org'
+        class: 'button radius'
 ---
 
 ### See What We’re Doing
