@@ -5309,7 +5309,7 @@
       back_text: 'Back',
       mobile_show_parent_link: true,
       is_hover: true,
-      scrolltop : true, // jump to top when sticky nav menu toggle is clicked
+      scrolltop : false, // jump to top when sticky nav menu toggle is clicked
       sticky_on : 'all'
     },
 
@@ -5428,9 +5428,9 @@
           }
         }
       } else {
-        if (self.is_sticky(topbar, topbar.parent(), settings)) {
-          topbar.parent().addClass('fixed');
-        }
+        // if (self.is_sticky(topbar, topbar.parent(), settings)) {
+        //   topbar.parent().addClass('fixed');
+        // }
 
         if (topbar.parent().hasClass('fixed')) {
           if (!topbar.hasClass('expanded')) {
