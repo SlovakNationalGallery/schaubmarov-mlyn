@@ -1,7 +1,9 @@
+{% set default_header_background_url  = pages.find("/home").header.header_background_url %}
+{% set default_logo_url               = pages.find("/home").header.logo_url %}
 
 <style type="text/css" id="rescue_custom_css">
 .home-header-bg {
-  background:url( '{{ theme_url }}/img/{{ site.header.background }}' ) #ffffff no-repeat center center fixed;
+  background:url( '{{ page.header.header_background_url|default(default_header_background_url) }}' ) #ffffff no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,7 +29,7 @@
 }
 
 .bg-image-header {
-  background:url( '{{ theme_url }}/img/{{ site.header.background }}' ) center bottom #ffffff;
+  background:url( '{{ page.header.header_background_url|default(default_header_background_url) }}' ) center bottom #ffffff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,7 +51,7 @@
 <div class="bg-image bg-image-header bg-center-center">
   <div class="site-branding">
     <a href="{{ base_url_absolute }}">
-      <img class="logo" src="{{ theme_url }}/img/{{ site.logo }}" alt="{{ site.logo }}">
+      <img class="logo" src="{{ page.header.logo_url|default(default_logo_url) }}" alt="{{ page.header.logo_url|default(default_logo_url)|split('/')|last|split('.')|first }}">
     </a>
   </div>
 </div>

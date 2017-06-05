@@ -1,9 +1,9 @@
 ---
 title: Home
-logo: logo_sm.png
+logo_url: '/user/pages/01.home/logo_sm.png'
+header_background_url: '/user/pages/01.home/profilovka.jpg'
 header_title: 'Schaubmarov mlyn'
 header_description: 'Mlyn v Pezinku čaká od roku 2017 postupná premena na zážitkový, vzdelávací a voľnočasový priestor nielen pre rodiny s deťmi. Chystáme množstvo nových podujatí, pracujeme na skvalitnení a doplnení služieb a zároveň plánujeme architektonickú premenu areálu. V Mlyne v Pezinku sa bude páčiť všetkým, ktorí radi utečú na víkend z mesta, baví ich umenie a radi trávia voľný čas na čerstvom vzduchu.'
-header_background: profilovka.jpg
 header_buttons:
     -
         text: viac...

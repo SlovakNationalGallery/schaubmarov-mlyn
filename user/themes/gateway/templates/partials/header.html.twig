@@ -1,7 +1,9 @@
+{% set default_header_background_url  = pages.find("/home").header.header_background_url %}
+{% set default_logo_url               = pages.find("/home").header.logo_url %}
 
 <style type="text/css" id="rescue_custom_css">
 .home-header-bg {
-  background:url( '{{ page.media[page.header.header_background].url }}' ) #ffffff no-repeat center center fixed;
+  background:url( '{{ page.header.header_background_url|default(default_header_background_url) }}' ) #ffffff no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,7 +29,7 @@
 }
 
 .bg-image-header {
-  background:url( '{{ page.media[page.header.header_background].url }}' ) center bottom #ffffff;
+  background:url( '{{ page.header.header_background_url|default(default_header_background_url) }}' ) center bottom #ffffff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,23 +51,24 @@
 <div class="home-header-bg clearfix">
   <div class="site-branding">
     <a href="{{ base_url_absolute }}">
-      <img class="logo" src="{{ page.media[page.header.logo].url }}" alt="{{ page.header.logo }}"></a>
-    </div>
-    <div class="hero-widgets-wrap">
-      <div class="row">
-        <div class="large-8 large-centered columns">
-          <aside id="text-3" class="widget widget_text">
-            <h1 class="widget-title">{{ page.header.header_title }}</h1>
-            <div class="textwidget">
-              <p>{{ page.header.header_description }}</p>
-              <p>
-                {% for button in page.header.header_buttons %}
-                <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
-                {% endfor %}
-              </p>
-            </div>
-          </aside>
-        </div>
+      <img class="logo" src="{{ page.header.logo_url }}" alt="{{ page.header.logo_url|split('/')|last|split('.')|first }}">
+    </a>
+  </div>
+  <div class="hero-widgets-wrap">
+    <div class="row">
+      <div class="large-8 large-centered columns">
+        <aside id="text-3" class="widget widget_text">
+          <h1 class="widget-title">{{ page.header.header_title }}</h1>
+          <div class="textwidget">
+            <p>{{ page.header.header_description }}</p>
+            <p>
+              {% for button in page.header.header_buttons %}
+              <a href="{{ button.url }}" class="{{ button.class }}">{{ button.text }}</a>
+              {% endfor %}
+            </p>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
+</div>
